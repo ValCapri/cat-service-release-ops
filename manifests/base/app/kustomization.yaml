@@ -9,6 +9,9 @@ configMapGenerator:
   - name: cat-service-config
     files:
       - application.properties
+  - name: catty-config
+    literals:
+      - KITTY=cat
 
 images:
   - name: gcr.io/pgtm-jlong/cat-service # used for Kustomize matching
